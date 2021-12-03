@@ -1,0 +1,71 @@
+.opinion-data-table {
+	.table {
+		&-column {
+			&__opinion {
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				word-break: break-word;
+				margin: 0 5px;
+				overflow: hidden;
+				display: -webkit-box;
+			}
+		}
+		&-header {
+			cursor: pointer;
+			// anti select
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+	}
+
+	textarea {
+		width: 100%;
+		min-height: 5rem;
+		resize: none;
+		border-radius: 8px;
+		border: 1px solid #ddd;
+		padding: 0.5rem;
+		color: #666;
+		box-shadow: inset 0 0 0.25rem #ddd;
+		&:focus {
+			outline: none;
+			border: 1px solid darken(#ddd, 5%);
+			box-shadow: inset 0 0 0.5rem darken(#ddd, 5%);
+		}
+		&[placeholder] {
+			font-style: italic;
+			font-size: 0.875rem;
+		}
+	}
+}
+
+.add-opinion-models {
+	textarea {
+		width: 100%;
+		min-height: 5rem;
+		resize: none;
+		border-radius: 8px;
+		border: 1px solid #ddd;
+		padding: 0.5rem;
+		color: #666;
+		box-shadow: inset 0 0 0.25rem #ddd;
+		&:focus {
+			outline: none;
+			border: 1px solid darken(#ddd, 5%);
+			box-shadow: inset 0 0 0.5rem darken(#ddd, 5%);
+		}
+		&[placeholder] {
+			font-style: italic;
+			font-size: 0.875rem;
+		}
+	}
+	select {
+		text-align: center;
+		text-align-last: center;
+		-moz-text-align-last: center;
+	}
+	
+}
